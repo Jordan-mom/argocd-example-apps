@@ -20,4 +20,4 @@ spec:
         - containerPort: 8080
         env:  # Ajout de la section pour les variables d'environnement
         - name: OWNCLOUD_TRUSTED_DOMAINS
-          value: "192.168.56.102"
+          value: "http://owncloud.local/"
