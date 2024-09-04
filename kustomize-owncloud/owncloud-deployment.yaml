@@ -14,7 +14,7 @@ spec:
         app: owncloud
     spec:
       containers:
-      - image: owncloud/server:10
+      - image: owncloud/server:10.15.0
         name: owncloud
         ports:
         - containerPort: 8080
