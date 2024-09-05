@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pythonsimple
+spec:
+  replicas: 3
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: pythonsimple
+  template:
+    metadata:
+      labels:
+        app: pythonsimple
+    spec:
+      containers:
+      - image: jordanmom/pythonsimple
+        name: pythonsimple
+        ports:
+        - containerPort: 5000
