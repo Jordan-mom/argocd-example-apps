@@ -18,7 +18,7 @@ spec:
       - image: jordanmom/serveur-messagerie:1.0.1
         name: pythonmessage
         ports:
-        - containerPort: 5000
+        - containerPort: 12345
         resources:
           limits:
             cpu: "250m"
