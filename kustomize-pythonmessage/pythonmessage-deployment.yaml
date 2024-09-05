@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pythonmessage
+  namespace: pythonmessage
+spec:
+  replicas: 6
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: pythonmessage
+  template:
+    metadata:
+      labels:
+        app: pythonmessage
+    spec:
+      containers:
+      - image: jordanmom/pythonmessage:1.0.1
+        name: pythonmessage
+        ports:
+        - containerPort: 5000
+        resources:
+          limits:
+            cpu: "250m"
+            memory: "200Mi"
+          requests:
+            cpu: "100m"
+            memory: "100Mi"
