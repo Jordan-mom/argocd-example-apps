@@ -14,7 +14,7 @@ spec:
         app: pythonsimple
     spec:
       containers:
-      - image: jordanmom/pythonsimple
+      - image: jordanmom/pythonsimple:1.1.0
         name: pythonsimple
         ports:
         - containerPort: 5000
