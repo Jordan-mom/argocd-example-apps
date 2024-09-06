@@ -17,4 +17,4 @@ spec:
           service:
             name: kustomize-pythonmessage
             port:
-              number: 12345
+              number: 5000
