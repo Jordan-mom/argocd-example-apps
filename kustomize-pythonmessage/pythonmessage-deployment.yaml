@@ -15,10 +15,10 @@ spec:
         app: pythonmessage
     spec:
       containers:
-      - image: jordanmom/serveur-messagerie:1.0.2
+      - image: jordanmom/serveur-messagerie:1.1.1
         name: pythonmessage
         ports:
-        - containerPort: 12345
+        - containerPort: 5000
         resources:
           limits:
             cpu: "250m"
