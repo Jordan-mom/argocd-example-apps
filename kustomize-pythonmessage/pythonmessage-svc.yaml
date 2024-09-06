@@ -6,7 +6,7 @@ metadata:
 spec:
   type: LoadBalancer
   ports:
-  - port: 12345
-    targetPort: 12345
+  - port: 5000
+    targetPort: 5000
   selector:
     app: pythonmessage
