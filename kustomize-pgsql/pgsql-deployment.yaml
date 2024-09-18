@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pgsql
+  namespace: pgsql
+spec:
+  replicas: 1
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: pgsql
+  template:
+    metadata:
+      labels:
+        app: pgsql
+    spec:
+      containers:
+      - image: jordanmom/postgresql_msg:1.0.0
+        name: pgsql
+        ports:
+        - containerPort: 5432
+        resources:
+          limits:
+            cpu: "250m"
+            memory: "200Mi"
+          requests:
+            cpu: "100m"
+            memory: "100Mi"
