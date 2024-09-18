@@ -6,6 +6,6 @@ namePrefix: kustomize-
 resources:
 - pgsql-deployment.yaml
 - pgsql-svc.yaml
-- ingress.yaml
+# - ingress.yaml
 
 namespace: pgsql
