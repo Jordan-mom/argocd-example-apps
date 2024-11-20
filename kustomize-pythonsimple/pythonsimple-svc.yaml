@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: kustomize-pythonsimple
+  name: pythonsimple
   namespace: pythonsimple
 spec:
   type: LoadBalancer
@@ -9,4 +9,4 @@ spec:
   - port: 5000
     targetPort: 5000
   selector:
-    app: kustomize-pythonsimple
+    app: pythonsimple
