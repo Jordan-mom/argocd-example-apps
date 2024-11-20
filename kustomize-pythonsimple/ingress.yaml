@@ -17,4 +17,4 @@ spec:
           service:
             name: kustomize-pythonsimple
             port:
-              number: 5000
+              number: 80
