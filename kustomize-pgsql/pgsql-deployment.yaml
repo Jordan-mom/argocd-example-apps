@@ -17,6 +17,9 @@ spec:
       containers:
       - image: jordanmom/postgresql_msg:1.0.0
         name: pgsql
+        env:
+        - name: PGDATA
+          value: /var/lib/postgresql/data/pgdata
         ports:
         - containerPort: 5432
         resources:
@@ -28,8 +31,8 @@ spec:
             memory: "100Mi"
         volumeMounts:
         - name: pgsql-data
-          mountPath: /var/lib/postgresql/data
+          mountPath: /var/lib/postgresql/data/pgdata
       volumes:
       - name: pgsql-data
         persistentVolumeClaim:
-          claimName: pgsql-pvc
+          claimName: pgsql-pgdata-pvc
