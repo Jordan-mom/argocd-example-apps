@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: catbook
+  namespace: catbook
+spec:
+  replicas: 2
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: catbook
+  template:
+    metadata:
+      labels:
+        app: catbook
+    spec:
+      containers:
+      - image: jordanmom/catbook:1.0.0
+        name: catbook
+        ports:
+        - containerPort: 80
+        resources:
+          limits:
+            cpu: "250m"
+            memory: "200Mi"
+          requests:
+            cpu: "100m"
+            memory: "100Mi"
