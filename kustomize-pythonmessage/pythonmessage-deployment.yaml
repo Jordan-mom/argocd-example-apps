@@ -15,7 +15,7 @@ spec:
         app: pythonmessage
     spec:
       containers:
-      - image: jordanmom/serveur-messagerie:1.3.3
+      - image: jordanmom/serveur-messagerie:1.3.4
         name: pythonmessage
         ports:
         - containerPort: 5000
