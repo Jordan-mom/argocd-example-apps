@@ -4,7 +4,7 @@ metadata:
   name: catbook
   namespace: catbook
 spec:
-  replicas: 2
+  replicas: 1
   revisionHistoryLimit: 3
   selector:
     matchLabels:
@@ -15,7 +15,7 @@ spec:
         app: catbook
     spec:
       containers:
-      - image: jordanmom/catbook:1.0.0
+      - image: jordanmom/catbook:1.0.1
         name: catbook
         ports:
         - containerPort: 80
