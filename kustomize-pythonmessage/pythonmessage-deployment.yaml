@@ -15,7 +15,7 @@ spec:
         app: pythonmessage
     spec:
       containers:
-      - image: jordanmom/serveur-messagerie:1.3.0
+      - image: jordanmom/serveur-messagerie:1.3.1
         name: pythonmessage
         ports:
         - containerPort: 5000
@@ -26,3 +26,6 @@ spec:
           requests:
             cpu: "100m"
             memory: "100Mi"
+        envFrom:
+        - secretRef:
+            name: pythonmessage-secret

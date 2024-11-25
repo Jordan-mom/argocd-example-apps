@@ -7,5 +7,6 @@ resources:
 - pythonmessage-deployment.yaml
 - pythonmessage-svc.yaml
 - ingress.yaml
+- secret.yaml
 
 namespace: pythonmessage
