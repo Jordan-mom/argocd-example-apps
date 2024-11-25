@@ -15,7 +15,7 @@ spec:
         app: catbook
     spec:
       containers:
-      - image: jordanmom/catbook:1.0.4
+      - image: jordanmom/catbook:1.0.5
         name: catbook
         ports:
         - containerPort: 80
