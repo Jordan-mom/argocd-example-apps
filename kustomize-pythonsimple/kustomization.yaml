@@ -7,5 +7,6 @@ resources:
 - pythonsimple-deployment.yaml
 - pythonsimple-svc.yaml
 - ingress.yaml
+- hpa.yaml
 
 namespace: pythonsimple
