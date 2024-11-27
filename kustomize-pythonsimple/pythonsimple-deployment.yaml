@@ -4,7 +4,6 @@ metadata:
   name: pythonsimple
   namespace: pythonsimple
 spec:
-  replicas: 4
   revisionHistoryLimit: 3
   selector:
     matchLabels:
