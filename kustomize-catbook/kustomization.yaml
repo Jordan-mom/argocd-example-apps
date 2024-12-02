@@ -7,5 +7,6 @@ resources:
 - catbook-deployment.yaml
 - catbook-svc.yaml
 - ingress.yaml
+- secret.yaml
 
 namespace: catbook
