@@ -23,7 +23,7 @@ spec:
           value: "owncloud.local"
         volumeMounts:
         - name: owncloud-storage
-          mountPath: /var/www/html
+          mountPath: /mnt/data
       volumes:
       - name: owncloud-storage
         persistentVolumeClaim:
