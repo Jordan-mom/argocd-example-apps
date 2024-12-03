@@ -16,6 +16,13 @@ spec:
       containers:
       - image: owncloud/server:10.15.0
         name: owncloud
+        resources:
+          limits:
+            cpu: "150m"
+            memory: "300Mi"
+          requests:
+            cpu: "300m"
+            memory: "500Mi"
         ports:
         - containerPort: 8080
         env:  # Ajout de la section pour les variables d'environnement
