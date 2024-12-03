@@ -27,4 +27,4 @@ spec:
       volumes:
       - name: owncloud-storage
         persistentVolumeClaim:
-          claimName: owncloud-pvc
+          claimName: kustomize-owncloud-pvc
