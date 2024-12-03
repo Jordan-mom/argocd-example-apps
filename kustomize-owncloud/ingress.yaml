@@ -5,6 +5,7 @@ metadata:
   namespace: owncloud
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
+    nginx.ingress.kubernetes.io/proxy-buffering: "on"
 spec:
   ingressClassName: nginx
   rules:

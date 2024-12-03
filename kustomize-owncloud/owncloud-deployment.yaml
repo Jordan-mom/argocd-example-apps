@@ -21,3 +21,10 @@ spec:
         env:  # Ajout de la section pour les variables d'environnement
         - name: OWNCLOUD_TRUSTED_DOMAINS
           value: "owncloud.local"
+        volumeMounts:
+        - name: owncloud-storage
+          mountPath: /var/www/html
+      volumes:
+      - name: owncloud-storage
+        persistentVolumeClaim:
+          claimName: owncloud-pvc
