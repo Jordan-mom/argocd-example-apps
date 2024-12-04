@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: jellyfin
-        image: ghcr.io/linuxserver/jellyfin
+        image: ghcr.io/linuxser
         imagePullPolicy: Always
         ports:
         - containerPort: 8096
