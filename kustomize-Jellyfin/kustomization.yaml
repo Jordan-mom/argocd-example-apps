@@ -1,10 +1,10 @@
 namePrefix: kustomize-
 
 resources:
-- Jellyfin-deployment.yaml
-- Jellyfin-svc.yaml
+- jellyfin-deployment.yaml
+- jellyfin-svc.yaml
 - ingress.yaml
-- Jellyfin-pvc.yaml
+- jellyfin-pvc.yaml
 
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
