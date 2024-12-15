@@ -17,24 +17,24 @@ spec:
     spec:
       containers:
       - name: jellyfin
-        image: lscr.io/linuxserver/jellyfin:latest
-        imagePullPolicy: Always
+        image: docker.io/jellyfin/jellyfin
+        imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8096
-        volumeMounts:
-        - name: jellyfin-config
-          mountPath: /config
-        - name: jellyfin-cache
-          mountPath: /cache
-        - name: jellyfin-media
-          mountPath: /media
-      volumes:
-      - name: jellyfin-config
-        persistentVolumeClaim:
-          claimName: jellyfin-pvc
-      - name: jellyfin-cache
-        persistentVolumeClaim:
-          claimName: jellyfin-pvc
-      - name: jellyfin-media
-        persistentVolumeClaim:
-          claimName: jellyfin-pvc
+      #   volumeMounts:
+      #   - name: jellyfin-config
+      #     mountPath: /config
+      #   - name: jellyfin-cache
+      #     mountPath: /cache
+      #   - name: jellyfin-media
+      #     mountPath: /media
+      # volumes:
+      # - name: jellyfin-config
+      #   persistentVolumeClaim:
+      #     claimName: jellyfin-pvc
+      # - name: jellyfin-cache
+      #   persistentVolumeClaim:
+      #     claimName: jellyfin-pvc
+      # - name: jellyfin-media
+      #   persistentVolumeClaim:
+      #     claimName: jellyfin-pvc
